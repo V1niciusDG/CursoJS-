@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>futebol.html</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+
+    }
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    var vitorias = parseInt(prompt("Qual número de vitorias do time?"))
+    var empates = parseInt(prompt("Qual numero de empates do time?"))
+    var derrotas = prompt("Quantas derrotas o time tem?")
+
+    var pontos = (vitorias * 3) + empates
+
+    mostra("O time tem " + pontos + " pontos ganhos");
+
+    if(pontos > 28) {
+
+        mostra("Seu time melhorou em relação ao ano passado");
+
+    }
+
+    if(pontos < 28) {
+
+        mostra("Seu time piorou em relação ao ano passado");
+
+    }
+
+    if(pontos == 28) {
+
+        mostra("Seu time está com a mesma quantidade de pontos do ano passado.")
+    }
+
+
+
+
+
+
+
+
+</script>
+

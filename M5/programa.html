@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>imc.html</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc(peso, altura) {
+
+		return peso / (altura * altura);
+	}
+
+	var imcVini = calculaImc(71, 1.73)
+	var imcAmiga = calculaImc(50, 1.52)
+
+	mostra(imcVini)
+	mostra(imcAmiga)
+
+
+
+
+
+
+
+	function geraCodigo(letra, numero1, numero2) {
+
+		return letra + numero1 + numero2;
+
+	}
+	var codigo = geraCodigo("GH", 10, 2)
+	mostra(codigo)
+
+
+
+
+
+</script>
